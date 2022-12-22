@@ -18,8 +18,7 @@ ts.setup {
     "html",
     "javascript",
     "typescript",
-    "svelte",
-    "lua"
+    "svelte"
   },
   autotag = {
     enable = true,

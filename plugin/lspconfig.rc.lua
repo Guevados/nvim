@@ -32,12 +32,16 @@ nvim_lsp.pyright.setup {
 }
 
 nvim_lsp.sumneko_lua.setup {
-  on_attach = on_attach,
+  capabilities = capabilities,
+  on_attach = function(client, bufnr)
+    on_attach(client, bufnr)
+    enable_format_on_save(client,bufnr)
+  end,
   settings = {
     Lua = {
       diagnostic = {
         -- Get the language server to recognize the 'vim' global
-        globals = { 'vim' }
+        globals = { 'nvim' }
       },
 
       workspace = {
