@@ -12,7 +12,7 @@ packer.startup(function(use)
     'svrana/neosolarized.nvim',
     requires = { 'tjdevries/colorbuddy.nvim' }
   }
---  use 'EdenEast/nightfox.nvim'
+  use 'EdenEast/nightfox.nvim'
   use 'kyazdani42/nvim-web-devicons' -- File icons
   use 'glepnir/lspsaga.nvim' -- LSP UIs
   use 'L3MON4D3/LuaSnip' -- Snippet
@@ -45,5 +45,6 @@ packer.startup(function(use)
   use 'dinhhuy258/git.nvim' -- For git blame & browser
 
   use 'kylechui/nvim-surround'
+  use 'b3nj5m1n/kommentary'
 
 end)
